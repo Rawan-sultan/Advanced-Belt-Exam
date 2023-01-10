@@ -75,6 +75,16 @@ class LoginViewController: UIViewController {
             else {return}
         Auth.auth().createUser(withEmail: emailField, password: passwordField)
         { user, error in
+            if let error = error, user == nil
+            {
+                let alert = UIAlertController(title: "Sign Up Failed",
+                                              message: error.localizedDescription,
+                                              preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                
+                self.present(alert, animated: true, completion: nil)
+            }
         }
     }
 }
