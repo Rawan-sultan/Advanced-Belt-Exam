@@ -15,6 +15,8 @@
 		99473289296CE28F00CB3AC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99473287296CE28F00CB3AC4 /* LaunchScreen.storyboard */; };
 		99473291296CE2A500CB3AC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99473290296CE2A500CB3AC4 /* GoogleService-Info.plist */; };
 		99473294296CE3BA00CB3AC4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99473293296CE3BA00CB3AC4 /* LoginViewController.swift */; };
+		99473297296CE89D00CB3AC4 /* GroceriesToBuy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99473296296CE89D00CB3AC4 /* GroceriesToBuy.swift */; };
+		99473299296CE8B200CB3AC4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99473298296CE8B200CB3AC4 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		9947328A296CE28F00CB3AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99473290296CE2A500CB3AC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99473293296CE3BA00CB3AC4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		99473296296CE89D00CB3AC4 /* GroceriesToBuy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesToBuy.swift; sourceTree = "<group>"; };
+		99473298296CE8B200CB3AC4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			children = (
 				9947327C296CE28D00CB3AC4 /* AppDelegate.swift */,
 				9947327E296CE28D00CB3AC4 /* SceneDelegate.swift */,
+				99473295296CE84E00CB3AC4 /* Models */,
 				99473292296CE2BA00CB3AC4 /* Controllers */,
 				99473282296CE28D00CB3AC4 /* Main.storyboard */,
 				99473285296CE28F00CB3AC4 /* Assets.xcassets */,
@@ -85,13 +90,21 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		99473295296CE84E00CB3AC4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				99473296296CE89D00CB3AC4 /* GroceriesToBuy.swift */,
+				99473298296CE8B200CB3AC4 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A530BFDE201A0E8FCCC3ED9C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				656B500F9F6DB46945C56AC1 /* Pods-Grocery-List.debug.xcconfig */,
 				877F6D41AA49A60B13FEF01E /* Pods-Grocery-List.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -220,7 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				99473294296CE3BA00CB3AC4 /* LoginViewController.swift in Sources */,
+				99473297296CE89D00CB3AC4 /* GroceriesToBuy.swift in Sources */,
 				9947327D296CE28D00CB3AC4 /* AppDelegate.swift in Sources */,
+				99473299296CE8B200CB3AC4 /* User.swift in Sources */,
 				9947327F296CE28D00CB3AC4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

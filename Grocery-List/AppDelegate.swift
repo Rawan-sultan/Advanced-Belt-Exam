@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Grocery-List
 //
-//  Created by 라완 💕 on 16/06/1444 AH.
+//  Created by 라완 💕 on 15/06/1444 AH.
 //
 
 import UIKit
