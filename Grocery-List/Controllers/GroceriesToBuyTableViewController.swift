@@ -83,7 +83,7 @@ class GroceriesToBuyTableViewController: UITableViewController {
                   let text = textField.text else { return }
             self.items[indexPath.row].name = text
             let item = ["name": text, "addedByUser": self.user.email, "completed": false]
-            self.ref.child(name.lowercased()).updateChildValues(item)
+            self.ref.child(name).updateChildValues(item)
 
         }
         let cancelAction = UIAlertAction(title: "Cancel", style:.default){(_) in
@@ -141,7 +141,7 @@ class GroceriesToBuyTableViewController: UITableViewController {
         } )
     }
     
-    
+    // Segue to Family (Online) Screen
     @objc func userCountButton() {
       performSegue(withIdentifier: ItemsToUsers, sender: nil)
     }
@@ -162,7 +162,7 @@ class GroceriesToBuyTableViewController: UITableViewController {
                                         addedByUser: self.user.email,
                                            completed: false)
             
-          self.ref.child(text.lowercased()).setValue(groceryItem.toAnyObject())
+          self.ref.child(text).setValue(groceryItem.toAnyObject())
 
           self.items.append(groceryItem)
           self.tableView.reloadData()
