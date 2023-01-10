@@ -2,10 +2,11 @@
 //  AppDelegate.swift
 //  Grocery-List
 //
-//  Created by 라완 💕 on 17/06/1444 AH.
+//  Created by 라완 💕 on 16/06/1444 AH.
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        
+        // Enabling Offline
+        Database.database().isPersistenceEnabled = true
         return true
     }
 
