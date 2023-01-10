@@ -122,7 +122,7 @@
         <!--Groceries to Buy-->
         <scene sceneID="Y4y-dj-uxh">
             <objects>
-                <tableViewController id="3WL-W4-C7h" sceneMemberID="viewController">
+                <tableViewController id="3WL-W4-C7h" customClass="GroceriesToBuyTableViewController" customModule="Grocery_List" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="L1G-HQ-dE7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,7 +159,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Groceries to Buy" id="Qu7-K4-jvd">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="uEq-IU-xRe"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="uEq-IU-xRe">
+                            <connections>
+                                <action selector="addButton:" destination="3WL-W4-C7h" id="H3F-t1-YBc"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="8H2-jp-59V" kind="show" identifier="ItemsToUsers" id="Jc1-Ga-QBG"/>

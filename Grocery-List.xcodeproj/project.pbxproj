@@ -17,6 +17,7 @@
 		99473294296CE3BA00CB3AC4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99473293296CE3BA00CB3AC4 /* LoginViewController.swift */; };
 		99473297296CE89D00CB3AC4 /* GroceriesToBuy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99473296296CE89D00CB3AC4 /* GroceriesToBuy.swift */; };
 		99473299296CE8B200CB3AC4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99473298296CE8B200CB3AC4 /* User.swift */; };
+		9947329B296CE93E00CB3AC4 /* GroceriesToBuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9947329A296CE93E00CB3AC4 /* GroceriesToBuyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		99473293296CE3BA00CB3AC4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		99473296296CE89D00CB3AC4 /* GroceriesToBuy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesToBuy.swift; sourceTree = "<group>"; };
 		99473298296CE8B200CB3AC4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9947329A296CE93E00CB3AC4 /* GroceriesToBuyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesToBuyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				99473293296CE3BA00CB3AC4 /* LoginViewController.swift */,
+				9947329A296CE93E00CB3AC4 /* GroceriesToBuyTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99473294296CE3BA00CB3AC4 /* LoginViewController.swift in Sources */,
+				9947329B296CE93E00CB3AC4 /* GroceriesToBuyTableViewController.swift in Sources */,
 				99473297296CE89D00CB3AC4 /* GroceriesToBuy.swift in Sources */,
 				9947327D296CE28D00CB3AC4 /* AppDelegate.swift in Sources */,
 				99473299296CE8B200CB3AC4 /* User.swift in Sources */,
