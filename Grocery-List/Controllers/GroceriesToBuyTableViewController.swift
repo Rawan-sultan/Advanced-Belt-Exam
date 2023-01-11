@@ -81,7 +81,6 @@ class GroceriesToBuyTableViewController: UITableViewController {
     
             guard let textField = alertController.textFields?.first,
                   let text = textField.text else { return }
-            self.items[indexPath.row].name = text
             let item = ["name": text, "addedByUser": self.user.email, "completed": false]
             self.ref.child(name).updateChildValues(item)
 
